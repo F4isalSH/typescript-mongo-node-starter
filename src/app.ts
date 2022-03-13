@@ -1,4 +1,5 @@
 import express, { Application, Request, Response } from "express";
+import "express-async-errors";
 
 const app: Application = express();
 const port: number | string = process.env.PORT || 3000;
