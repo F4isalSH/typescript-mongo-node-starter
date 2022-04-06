@@ -5,8 +5,8 @@ import { connectDB } from "./database/connect";
 require("dotenv").config();
 
 const app: Application = express();
-const port: number | string = process.env.PORT || 3000;
-const url: string = process.env.MONGO_URI!;
+const port = process.env.PORT!;
+const url = process.env.MONGO_URI!;
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello world");
