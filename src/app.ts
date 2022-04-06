@@ -19,7 +19,6 @@ app.use(notFound);
 const start = async () => {
   try {
     await connectDB(url);
-    console.log("Connect to DB...");
     app.listen(port, () => console.log(`Server running on port ${port}`));
   } catch (err: any) {
     console.log(err);
